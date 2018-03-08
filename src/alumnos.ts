@@ -21,5 +21,9 @@ date.setDate(5/26/1996);
 crud.addElement(arreglo,'14401007','betsy','sanchez',
 100,'mujeralfa',date,false);
 console.log(crud.consultar(arreglo,""));
+crud.update(arreglo,'14401007','besy','sanchezcarrillo',90,'mujer',date,false);
+console.log(crud.consultar(arreglo,""));
+crud.delete(arreglo,'14401007');
+console.log(crud.consultar(arreglo,""));
 
 

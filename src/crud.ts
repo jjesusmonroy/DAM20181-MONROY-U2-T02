@@ -64,5 +64,12 @@ export class Crud {
             }
         });
     }
+    delete(arreglo:Array<Alumno>,nocontrol:string){
+        arreglo.forEach(element => {
+            if(element.nocontrol.match(nocontrol)){
+                delete arreglo [arreglo.indexOf(element,0)]
+            }
+        });
+    }
 
 }
