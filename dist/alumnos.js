@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var crud_1 = require("./crud");
+var arreglo = Array();
+var crud = new crud_1.Crud();
+var date = new Date();
+date.setDate(3 / 28 / 1995);
+crud.addElement(arreglo, '14400968', 'jesus', 'monroy', 100, 'machoalfa', date, true);
+date.setDate(5 / 26 / 1996);
+crud.addElement(arreglo, '14401007', 'betsy', 'sanchez', 100, 'mujeralfa', date, false);
+console.log(crud.consultar(arreglo, ""));
